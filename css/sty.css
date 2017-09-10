@@ -1,0 +1,31 @@
+.templatemo-container {
+							    background-color: rgba(255,255,255,0.8);
+							    border: 1px solid #dedede;
+							    border-radius: 8px;
+							    margin: 0 auto;
+							    padding: 30px;
+							}
+		.templatemo-login-form-1 {
+								    max-width: 500px;
+								}
+		.margin-bottom-30 {
+							    margin-bottom: 30px;
+							}
+		h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: normal;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+nav{
+	
+	background-color: rgb(66, 206, 244);
+
+	}
+	

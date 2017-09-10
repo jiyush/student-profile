@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/sty.css">
     <title>GECM Student Entery</title>
+    <style type="text/css">
     
+    </style>
   </head>
-  <body class="templatemo-bg-gray" >
+  <body style="background-color: #eee;" >
   <?php  require './master/header.php'; ?>
   <?php  require './master/nav.php'; ?>
 
