@@ -1,7 +1,8 @@
 
-angular.module('myApp',['ngAnimate']);
+var app = angular.module('myApp',['ngAnimate']);
 
 angular.module('myApp').controller('FormController',FormController);
+
 
 function FormController(){
 
@@ -13,11 +14,22 @@ function FormController(){
 	vm.stepFive = stepFive;
 
 	function stepTwo(){
+		
+		
 		vm.step = "two";
+		
 	}
+
+
 	function stepThree(){
-		vm.step = "three";
+		
+
+
+		vm.step = "three";	
 	}
+
+
+
 	function stepFour(){
 		vm.step = "four";
 	}
@@ -25,3 +37,4 @@ function FormController(){
 		vm.step = "five";
 	}
 }
+

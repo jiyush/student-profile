@@ -5,9 +5,9 @@
 		   
 		    <div class="navbar-header  ">
 		      
-		     <a class="navbar-brand" href="./"   ><font size="6" color="black">
-			     Government Engineering College Modasa
-			  </font>
+		     <a class="navbar-brand" href="./"   >
+			    GEC Modasa
+			  
 			  </a>
 		    </div>
 
