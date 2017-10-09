@@ -6,13 +6,38 @@ $(document).ready(function(){
     $("#d3").hide();
     $("#d4").hide();
     $("#d5").hide();
+  
+
 
 
     $("#btn1").click(function(){
 
-		$("#d1").hide();
-		$("#d2").show();
-		
+	    	var en = $("#en");
+			
+			$.ajax({
+				url : 'check.php',
+				type : 'post',
+				data : {
+					enrollment : en.val()
+				},
+				success : function(response){
+					var res = response;
+					if (res == "yes") {
+						console.log('exist');
+						alert("Enrollment Number Already Exist..!");
+						return false;
+					}else{
+						console.log('Not exist');
+						$("#d1").hide();
+						$("#d2").show();
+					}
+				}
+			});
+
+
+
+
+		   
 	});
 	$("#btn2").click(function(){
 
@@ -44,32 +69,7 @@ $(document).ready(function(){
 
 
 
-	$('form.ajax').on('submit',function(){
-		var that = $(this),
-		url = that.attr('action'),
-		method = that.attr('method'),
-		data = {};
-
-		that.find('[name]').each(function(index ,value){
-			var that = $(this),
-			name = that.attr('name'),
-			value = that.val();
-
-			data[name] = value;
-		});
-
-		$.ajax({
-			url : url,
-			type : method,
-			data : data,
-			success : function(response){
-				console.log(response);
-			}
-
-		});
-
-		
-	});
 
 
 });
+

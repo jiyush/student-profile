@@ -1,0 +1,219 @@
+ <ul class="collapsible" data-collapsible="accordion">
+       <li>
+		         <div class="collapsible-header"><i class=""></i>Name :   </div> 
+		        
+		         <div class="collapsible-body">
+		         <div class="row">
+		    
+		         <div class="input-field col s4 left50">
+		         <i class="mdi-action-swap-vert prefix"></i>
+		          <input id="first_name" type="text" value="" class="validate">
+		          <label for="first_name">Change your First Name</label>
+		        </div>
+		        <div class="input-field col s4">
+		          <input id="middle_name" type="text" value="" class="validate">
+		          <label for="last_name">Change your Middle Name</label>
+		        </div>
+		        <div class="input-field col s4">
+		          <input id="last_name" type="text" value="" class="validate">
+		          <label for="last_name">Change your Last Name</label>
+		        </div>
+		     
+		        <button class="waves-effect waves-light btn left50 changeUserProfileData" onclick="changeName()" id="nameChangeSbmtBtn" >
+		           <i class="mdi-editor-merge-type right"></i>Change it
+		        </button>
+		        
+		     	 </div>
+		    	</div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Enrollment :  </div>
+         
+       </li>
+       <li>
+         <div class="collapsible-header"><i class=""></i>Change Password</div>
+         <div class="collapsible-body">
+         <div class="input-field col s6">
+              <i class=" prefix"></i>
+              <input id="icon_prefix_pwd1" type="password" class="validate w-500" >
+              <label for="icon_prefix_pwd1">Type Old Password</label>
+              </div>
+              <div class="input-field col s6">
+               <i class=" prefix"></i>
+               <input id="icon_prefix_pwd2" type="password" class="validate w-500" >
+              <label for="icon_prefix_pwd2">Type new Password</label>
+          </div>
+          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changepassword" id="passChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+      </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Year of Admission :  </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Date of Birth : </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Blood Group :  </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Gender :   </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Contact Number : </div>
+         <div class="collapsible-body">
+         <div class="input-field col s6">
+              <i class=" prefix"></i>
+              <input id="icon_prefix_pwd1" type="number" class="validate w-500" value="" >
+              <label for="icon_prefix_pwd1">change Contact Number-1</label>
+              </div>
+              <div class="input-field col s6">
+               <i class=" prefix"></i>
+               <input id="icon_prefix_pwd2" type="number" class="validate w-500" value=""  >
+              <label for="icon_prefix_pwd2">change Contact Number-2</label>
+          </div>
+          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changepassword" id="passChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+      </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Email :  </div>
+         <div class="collapsible-body">
+         <div class="input-field col s6">
+              <i class=" prefix"></i>
+              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+              <label for="icon_prefix_Email">Change your Email address</label>
+          </div>
+          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+      </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Address :  </div>
+         <div class="collapsible-body">
+         <div class="row">
+    
+         <div class="input-field col s3 left50">
+         <i class="mdi-action-swap-vert prefix"></i>
+          <input id="first_name" type="text" value="" class="validate">
+          <label for="first_name">Change your Street</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="middle_name" type="text" value="" class="validate">
+          <label for="last_name">Change your City</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="last_name" type="text" value="" class="validate">
+          <label for="last_name">Change your State</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="last_name" type="text" value="" class="validate">
+          <label for="last_name">Change your Pincode</label>
+        </div>
+     
+        <button class="waves-effect waves-light btn left50 changeUserProfileData" onclick="changeName()" id="nameChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+        
+      </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Branch :  </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>SSC :  </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>HSC :  </div>
+       </li>
+        
+        <li>
+         <div class="collapsible-header"><i class=""></i>Current CPI :  </div>
+         <div class="collapsible-body">
+         <div class="input-field col s6">
+              <i class=" prefix"></i>
+              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+              <label for="icon_prefix_Email">Change CPI</label>
+          </div>
+          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+      </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i> Current CGPA :  </div>
+         <div class="collapsible-body">
+         <div class="input-field col s6">
+              <i class=" prefix"></i>
+              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+              <label for="icon_prefix_Email">Change your CGPA</label>
+          </div>
+          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+      </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Total Block : </div>
+         <div class="collapsible-body">
+         <div class="input-field col s6">
+              <i class=" prefix"></i>
+              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+              <label for="icon_prefix_Email">Change your Total Block</label>
+          </div>
+          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+      </div>
+       </li>
+        <li>
+         <div class="collapsible-header"><i class=""></i>Current Block :  </div>
+         <div class="collapsible-body">
+         <div class="input-field col s6">
+              <i class=" prefix"></i>
+              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+              <label for="icon_prefix_Email">Change your Current Block</label>
+          </div>
+          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+      </div>
+       </li>
+       <li>
+         <div class="collapsible-header"><i class=""></i>Area of  Intrest :  </div>
+         <div class="collapsible-body">
+         <div class="row">
+    
+         <div class="input-field col s3 left50">
+         <i class="mdi-action-swap-vert prefix"></i>
+          <input id="first_name" type="checkBox" value="Angular js" class="validate">
+          <label for="first_name">Angular js</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="first_name" type="checkBox" value="Angular js" class="validate">
+          <label for="last_name">C++</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="first_name" type="checkBox" value="Angular js" class="validate">
+          <label for="last_name">Python</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="first_name" type="text" value="" class="validate">
+          <label for="last_name">Other</label>
+        </div>
+     
+        <button class="waves-effect waves-light btn left50 changeUserProfileData" onclick="changeName()" id="nameChangeSbmtBtn" >
+           <i class="mdi-editor-merge-type right"></i>Change it
+        </button>
+        
+      </div>
+       </li>
+ 
+      
+
+  </ul>
+
+<?php echo ; ?>

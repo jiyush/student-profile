@@ -3,21 +3,20 @@
 
 	
 	$qr = array();
-
+print_r($_POST);
 	foreach ($_POST as $key => $value) {
 			
 			array_push($qr," `".strtolower($key)."` = '".strtolower($value)."' ");
 
 	}
-	print_r($qr);
-	$piyush = "piyush";
+	//print_r($qr);
+	
 	$query = "INSERT INTO `student` SET ". implode(",", $qr);
-
+//echo $query;
 		$query_run = mysqli_query($con,$query);
+
 		if ($query_run) {
-			echo "done";
-		}else{
-			echo "not done";
+			header('location:index.php');
 		}
 
 	/*	require 'conn.inc.php';
