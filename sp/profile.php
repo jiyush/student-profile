@@ -113,19 +113,19 @@
 				    
 					        <div class="input-field col s4 left50">
 					         <i class="mdi-action-swap-vert prefix"></i>
-					          <input id="first_name" type="text" value="" class="validate">
+					          <input id="f_name" type="text" value="<?php echo $fname; ?>" class="validate">
 					          <label for="first_name">Change your First Name</label>
 					        </div>
 					        <div class="input-field col s4">
-					          <input id="middle_name" type="text" value="" class="validate">
+					          <input id="m_name" type="text" value="<?php echo $mname; ?>" class="validate">
 					          <label for="last_name">Change your Middle Name</label>
 					        </div>
 					        <div class="input-field col s4">
-					          <input id="last_name" type="text" value="" class="validate">
+					          <input id="l_name" type="text" value="<?php echo $lname; ?>" class="validate">
 					          <label for="last_name">Change your Last Name</label>
 					        </div>
 					     
-					        <button class="waves-effect waves-light btn left50 changeUserProfileData" onclick="changeName()" id="nameChangeSbmtBtn" >
+					        <button id="btn_name" class="waves-effect waves-light btn left50 changeUserProfileData"  >
 					           <i class="mdi-editor-merge-type right"></i>Change it
 					        </button>
 				        
@@ -141,10 +141,10 @@
          			<div class="collapsible-body">
 				         <div class="input-field col s6">
 				              <i class=" prefix"></i>
-				              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+				              <input id="pass" type="email" value="" class="validate w-500">
 				              <label for="icon_prefix_Email">Change Your Password</label>
 				          </div>
-				          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+				          <button id="btn_pass" class="waves-effect waves-light btn left50 changeUserProfileData"  >
 				           <i class="mdi-editor-merge-type right"></i>Change it
 				        </button>
 				    </div>
@@ -162,10 +162,10 @@
          			<div class="collapsible-body">
 				         <div class="input-field col s6">
 				              <i class=" prefix"></i>
-				              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+				              <input id="f_prof" type="text" value="<?php echo $f_profession; ?>" class="validate w-500">
 				              <label for="icon_prefix_Email">Change Father Profession</label>
 				          </div>
-				          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+				          <button id="btn_f" class="waves-effect waves-light btn left50 changeUserProfileData"  >
 				           <i class="mdi-editor-merge-type right"></i>Change it
 				        </button>
 				    </div>
@@ -175,10 +175,10 @@
          			<div class="collapsible-body">
 				         <div class="input-field col s6">
 				              <i class=" prefix"></i>
-				              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+				              <input id="m_prof" type="text" value="<?php echo $m_profession; ?>" class="validate w-500">
 				              <label for="icon_prefix_Email">Change Mother Profession</label>
 				          </div>
-				          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+				          <button class="waves-effect waves-light btn left50 changeUserProfileData"  id="btn_m" >
 				           <i class="mdi-editor-merge-type right"></i>Change it
 				        </button>
 				    </div>
@@ -200,10 +200,10 @@
 				         <div class="collapsible-body">
 				         <div class="input-field col s6">
 				              <i class=" prefix"></i>
-				              <input id="icon_prefix_Email" type="email" value="" class="validate w-500">
+				              <input id="email" type="email" value="<?php echo $email; ?>" class="validate w-500">
 				              <label for="icon_prefix_Email">Change your Email address</label>
 				          </div>
-				          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+				          <button class="waves-effect waves-light btn left50 changeUserProfileData"  id="btn_email" >
 				           <i class="mdi-editor-merge-type right"></i>Change it
 				        </button>
 			      	</div>
@@ -218,21 +218,25 @@
 			         <div class="collapsible-body">
 				         <div class="row">
 				    
-					        <div class="input-field col s4 left50">
+					        <div class="input-field col s3 left50">
 					         <i class="mdi-action-swap-vert prefix"></i>
-					          <input id="first_name" type="text" value="" class="validate">
+					          <input id="l_street" type="text" value="<?php echo $l_street; ?>" class="validate">
 					          <label for="first_name">Change your Street</label>
 					        </div>
-					        <div class="input-field col s4">
-					          <input id="middle_name" type="text" value="" class="validate">
+					        <div class="input-field col s3">
+					          <input id="l_city" type="text" value="<?php echo $l_city; ?>" class="validate">
 					          <label for="last_name">Change your City</label>
 					        </div>
-					        <div class="input-field col s4">
-					          <input id="last_name" type="text" value="" class="validate">
+					        <div class="input-field col s3">
+					          <input id="l_state" type="text" value="<?php echo $l_state; ?>" class="validate">
 					          <label for="last_name">Change your State</label>
 					        </div>
+					        <div class="input-field col s3">
+					          <input id="l_pincode" type="text" value="<?php echo $l_pincode; ?>" class="validate">
+					          <label for="last_name">Change your Pincode</label>
+					        </div>
 					     
-					        <button class="waves-effect waves-light btn left50 changeUserProfileData" onclick="changeName()" id="nameChangeSbmtBtn" >
+					        <button class="waves-effect waves-light btn left50 changeUserProfileData"  id="btn_local" >
 					           <i class="mdi-editor-merge-type right"></i>Change it
 					        </button>
 				        
@@ -252,21 +256,25 @@
 			         <div class="collapsible-body">
 				         <div class="row">
 				    
-					        <div class="input-field col s4 left50">
+					        <div class="input-field col s3 left50">
 					         <i class="mdi-action-swap-vert prefix"></i>
-					          <input id="first_name" type="text" value="" class="validate">
+					          <input id="p_street" type="text" value="<?php echo $p_street; ?>" class="validate">
 					          <label for="first_name">Change your Street</label>
 					        </div>
-					        <div class="input-field col s4">
-					          <input id="middle_name" type="text" value="" class="validate">
+					        <div class="input-field col s3">
+					          <input id="p_city" type="text" value="<?php echo $p_city; ?>" class="validate">
 					          <label for="last_name">Change your City</label>
 					        </div>
-					        <div class="input-field col s4">
-					          <input id="last_name" type="text" value="" class="validate">
+					        <div class="input-field col s3">
+					          <input id="p_state" type="text" value="<?php echo $p_state; ?>" class="validate">
 					          <label for="last_name">Change your State</label>
 					        </div>
+					        <div class="input-field col s3">
+					          <input id="p_pincode" type="text" value="<?php echo $p_pincode; ?>" class="validate">
+					          <label for="last_name">Change your Pincode</label>
+					        </div>
 					     
-					        <button class="waves-effect waves-light btn left50 changeUserProfileData" onclick="changeName()" id="nameChangeSbmtBtn" >
+					        <button class="waves-effect waves-light btn left50 changeUserProfileData"  id="btn_per" >
 					           <i class="mdi-editor-merge-type right"></i>Change it
 					        </button>
 				        
@@ -376,7 +384,7 @@
 					              <input id="icon_prefix_Email" type="number" value="" class="validate w-500">
 					              <label for="icon_prefix_Email">Change Your Bank Account Number</label>
 					          </div>
-					          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+					          <button class="waves-effect waves-light btn left50 changeUserProfileData"  id="emailChangeSbmtBtn" >
 					           <i class="mdi-editor-merge-type right"></i>Change it
 					        </button>
 				      	</div>
@@ -389,7 +397,7 @@
 					              <input id="icon_prefix_Email" type="text" value="" class="validate w-500">
 					              <label for="icon_prefix_Email">Change Your Bank IFSC</label>
 					          </div>
-					          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+					          <button class="waves-effect waves-light btn left50 changeUserProfileData"  id="emailChangeSbmtBtn" >
 					           <i class="mdi-editor-merge-type right"></i>Change it
 					        </button>
 				      	</div>
@@ -402,7 +410,7 @@
 					              <input id="icon_prefix_Email" type="text" value="" class="validate w-500">
 					              <label for="icon_prefix_Email">Change Your Bank Branch</label>
 					          </div>
-					          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+					          <button class="waves-effect waves-light btn left50 changeUserProfileData"  id="emailChangeSbmtBtn" >
 					           <i class="mdi-editor-merge-type right"></i>Change it
 					        </button>
 				      	</div>
@@ -415,7 +423,7 @@
 					              <input id="icon_prefix_Email" type="text" value="" class="validate w-500">
 					              <label for="icon_prefix_Email">Change Your Bank Name</label>
 					          </div>
-					          <button class="waves-effect waves-light btn left50 changeUserProfileData" pageXhr="changeemail" id="emailChangeSbmtBtn" >
+					          <button class="waves-effect waves-light btn left50 changeUserProfileData"  id="emailChangeSbmtBtn" >
 					           <i class="mdi-editor-merge-type right"></i>Change it
 					        </button>
 				      	</div>
